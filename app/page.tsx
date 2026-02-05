@@ -1,10 +1,10 @@
 import { About } from "@/components/About";
 import { CallToAction } from "@/components/CallToAction";
 import { Contact } from "@/components/Contact";
+import { FeaturedServices } from "@/components/FeaturedServices";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
-import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 
@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Services />
+      <FeaturedServices />
       <WhyChooseUs />
       <Testimonials />
       <CallToAction />

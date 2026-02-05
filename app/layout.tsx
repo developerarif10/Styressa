@@ -1,3 +1,4 @@
+import { AppointmentProvider } from "@/context/AppointmentContext";
 import type { Metadata } from "next";
 import { Bodoni_Moda, Inter } from "next/font/google";
 import "./globals.css";
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${bodoni.variable} ${inter.variable} antialiased bg-background text-primary`}
       >
-        {children}
+        <AppointmentProvider>
+          {children}
+        </AppointmentProvider>
       </body>
     </html>
   );
